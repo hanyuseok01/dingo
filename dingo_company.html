@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dingo</title>
+    <link rel="icon" type="image/png" href="img/로고만듬01.png">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/dingo_company.css">
+    <link rel="stylesheet" href="css/m_dingo_company.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="header">
+            <div class="gnb">
+                <div class="gnb_logo">
+                    <h1><a href="index.html"><!-- 로고이미지 --></a></h1>
+                </div>
+                <div class="gnb_middle">
+                    <ul>
+                        <li><a href="dingo_company.html">회사소개</a></li>
+                        <li><a href="#">컨텐츠</a></li>
+                        <li><a href="#">채널 Original</a></li>
+                        <li><a href="#">딩고 Contents</a></li>
+                        <li><a href="#">With 딩고</a></li>
+                    </ul>
+                </div>
+
+                <div class="gnb_right">
+                    <a href="#"><!-- 검색 아이콘 --></a>
+                    <div class="language_btn">
+                        <ul class="language_list_kr">
+                            <li>
+                                <a href="#" class="language_world">
+                                    KOR
+                                </a>
+                                <ul class="language_list">
+                                    <li><a href="#">ENG</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="tablet">
+                <a class="logoMenu" href="index.html"><img src="img/dingo_mylogo.png" alt=""></a>
+                <a class="menu" href=""><img src="img/menu.png" alt="메뉴"></a>
+            </div>
+        </div>
+        <div class="gnb_blind">
+            <ul>
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">컨텐츠</a></li>
+                <li><a href="#">채널 Original</a></li>
+                <li><a href="#">딩고 Contents</a></li>
+                <li><a href="#">With 딩고</a></li>
+            </ul>
+            <ul class="language_blind ">
+                <li>
+                    <a href="#" class="blind_world">
+                        KOR
+                    </a>
+                    <ul class="blind_list">
+                        <li><a href="#">ENG</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a href="#" class="closeBtn"><img src="img/close_button.png" alt="닫기"></a>
+
+            <a href="#" class="option"><img src="img/option_white.png" alt="설정"></a>
+        </div>
+   
+
+        <div class="all_sub_gnb">
+            <div class="sub_gnb">
+                <div class="sub_gnb_logo">
+                    <h1><a href="dingo_main.html"><!-- 로고이미지 --></a></h1>
+                </div>
+                <div class="ssub_gnb">
+                    <ul>
+                        <li> <a href="#">회사소개</a>
+                            <ul class="sub_area">
+                                <li><a href="dingo_company.html">Company</a></li>
+                                <li><a href="dingo_company.html">News</a></li>
+                                <li><a href="dingo_company.html">Meeting</a></li>
+                            </ul>
+                        </li>
+                        <li> <a href="#">컨텐츠</a>
+                            <ul class="sub_area">
+                                <li><a href="#">Dingo Go Up</a></li>
+                                <li><a href="#">Collaboration</a></li>
+                                <li><a href="#">Dingo X Friends</a></li>
+                            </ul>
+                        </li>
+                        <li> <a href="#">채널 Original</a>
+                            <ul class="sub_area">
+                                <li><a href="#">Dingo Ent</a></li>
+                                <li><a href="#">Dingo Music</a></li>
+                                <li><a href="#">Dingo Lifestyle</a></li>
+                            </ul>
+                        </li>
+                        <li> <a href="#">딩고 Contents</a>
+                            <ul class="sub_area">
+                                <li><a href="#">Music Album</a></li>
+                                <li><a href="#">Video Album</a></li>
+                                <li><a href="#">Ent Live</a></li>
+                            </ul>
+                        </li>
+                        <li> <a href="#">With 딩고</a>
+                            <ul class="sub_area">
+                                <li><a href="#">My Crew</a></li>
+                                <li><a href="#">Crew Life</a></li>
+                                <li><a href="#">Recruit</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sub_gnb_right">
+                    <a href="#"><!-- 검색 아이콘 --></a>
+                    <div class="language_btn01">
+                        <ul class="language_list_kr01">
+                            <li>
+                                <a href="#" class="language_world01">
+                                    KOR
+                                </a>
+                                <ul class="language_list01">
+                                    <li><a href="#">ENG</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="inner">
+            <div class="inventory">
+                <p class="red"><a href="" onclick="viewTab(0)">Company</a></p>
+                <p><a href="" onclick="viewTab(1)">News</a></p>
+                <p><a href="" onclick="viewTab(2)">Meeting</a></p>
+            </div>
+            <div class="smallGnb">
+                <div class="view_Company red">
+                    <section class="contents_all">
+                        <div class="media_title">
+                            <h2>디지털 콘텐츠를 기획하고 제작하는 <br><span>No.1 콘텐츠 미디어</span></h2>
+                        </div>
+                        <div class="media_graph">
+                            <div class="img_logo"><img src="img/로고제작02.png" alt="로고">
+                            </div>
+                            <ul class="three_text">
+                                <li class="on"><a href="#" onclick="imgTextView(0)">컨텐츠 조회수</a></li>
+                                <li><a href="#" onclick="imgTextView(1)">연령비율</a></li>
+                                <li><a href="#" onclick="imgTextView(2)">남녀비율</a></li>
+                            </ul>
+                        </div>
+                        <div class="view_graph">
+                            <div class="viewOn01 on">
+                                <ul class="view_graph01">
+                                    <li>
+                                        <p>211,882+</p>
+                                        <span>전체 디지털 콘텐츠</span>
+                                    </li>
+                                    <li>
+                                        <p>4,471만+ </p>
+                                        <span>전체 채널 구독자</span>
+                                    </li>
+                                    <li>
+                                        <p>1.2억+</p>
+                                        <span>전체 채널 월 평균 조회수</span>
+                                    </li>
+                                    <li>
+                                        <p>33,700+ </p>
+                                        <span>Youtube 채널 누적 콘텐츠</span>
+                                    </li>
+                                    <li>
+                                        <p>4.8억+ </p>
+                                        <span>Youtube 채널 누적 시청 시간</span>
+                                    </li>
+                                    <li>
+                                        <p>631만+ </p>
+                                        <span>Youtube 채널 월 평균 시청 시간</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="viewOn02">
+                                <ul class="view_graph02">
+                                    <li><img src="img/연령비율01.png" alt="연령"></li>
+                                </ul>
+                            </div>
+                            <div class="viewOn03">
+                                <ul class="view_graph03">
+                                    <li><img src="img/남녀그래프.png" alt="남녀"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                        <div class="follow_side">
+                            <div class="arrow">
+                                <img src="img/free-icon-down-arrow-white.png" alt="">
+                                <img src="img/free-icon-down-arrow-white.png" alt="">
+                            </div>
+                            <aside class="sideMenu">
+                                <ul class="info">
+                                    <li><a href="https://www.youtube.com/@DingoMusic"><!-- 딩고 유튜브 채널 --></a></li>
+                                    <li><a href="https://www.youtube.com/@dingostudio"><!-- 딩고 유튜브 채널 --></a></li>
+                                    <li><a href="https://www.youtube.com/@df_dingo"><!-- 딩고 유튜브 채널 --></a></li>
+                                    <li><a href="https://www.youtube.com/@dingomovie"><!-- 딩고 유튜브 채널 --></a></li>
+                                    <li><a href="https://www.youtube.com/@dingostory"><!-- 딩고 유튜브 채널 --></a></li>
+                                    <li><a href="https://www.youtube.com/@dingofood"><!-- 딩고 유튜브 채널 --></a></li>
+                                    <li><a href="https://www.youtube.com/@risingvoice_official"><!-- 딩고 유튜브 채널 --></a>
+                                    </li>
+                                    <li><a href="https://www.youtube.com/@dingofitness"><!-- 딩고 유튜브 채널 --></a></li>
+                                    <li><a href="https://www.youtube.com/@ddingo806"><!-- 딩고 유튜브 채널 --></a></li>
+                                    <li><a href="https://www.youtube.com/@ddingpick"><!-- 딩고 유튜브 채널 --></a></li>
+                                    <li><a href="https://www.youtube.com/@saesora_music"><!-- 딩고 유튜브 채널 --></a></li>
+                                    <li><a href="https://www.youtube.com/@snob_magazine"><!-- 딩고 유튜브 채널 --></a></li>
+                                    <li><a href="https://www.youtube.com/@dingobeauty"><!-- 딩고 유튜브 채널 --></a></li>
+                                    <li><a href="https://www.youtube.com/@DingoFriends"><!-- 딩고 유튜브 채널 --></a></li>
+                                    <li><a href="https://www.youtube.com/@dgg_official"><!-- 딩고 유튜브 채널 --></a></li>
+                                    <li>
+                                        <ul class="sns">
+                                            <li><a
+                                                    href="https://www.tiktok.com/@dingo__official?lang=ko-KR"><!-- 틱톡 --></a>
+                                            </li>
+                                            <li><a href="https://www.instagram.com/dingo_music/"><!-- 인스타 --></a></li>
+                                            <li><a
+                                                    href="https://www.youtube.com/channel/UCtCiO5t2voB14CmZKTkIzPQ"><!-- 유튜브 --></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </aside>
+                        </div>
+                        <div class="grayBox"></div>
+                   
+                    <section class="who_we_are">
+                        <h2 class="who_is_text">Who We Are</h2>
+                        <div class="who_way">
+                            <div class="who_is_left">
+                                <p class="left_ip">
+                                    메이크어스는 독보적인 IP 라인업 및 제작 전문성을 갖춘
+                                    글로벌 디지털 콘텐츠 스튜디오입니다.
+                                    모바일, SNS, 개인화 그리고 끊임없이 변화하는 미디어 시대에
+                                    가장 최적화된 디지털 콘텐츠를 제작하는 메이크어스는
+                                    엔터테인먼트 분야의 글로벌 비즈니스를 지향합니다.
+                                    메이크어스는 음악, 예능, 웹드라마, 헬스, 뷰티, 라이프스타일 등
+                                    다양한 콘텐츠를 우리만의 방법으로 만들고, 공감과 정보를 즐거움이라는
+                                    언어로 나누고 있습니다.
+                                </p>
+                            </div>
+                            <div class="who_is_right">
+                                <!-- img -->
+                                <p class="mic_click"><a href="#">click</a></p>
+                            </div>
+                        </div>
+                        <div class="clickArea">
+                            <div class="clickInner">
+                                <ul>
+                                    <li>
+                                        <img src="img/icon01.png" alt="스마일">
+                                        <p>#DIGITAL CONTENT
+                                            STUDIO</p>
+                                    </li>
+                                    <li>
+                                        <img src="img/icon02.png" alt="마이크">
+                                        <p>#MOBILE BROADCASTING</p>
+                                    </li>
+                                    <li>
+                                        <img src="img/icon03.png" alt="#">
+                                        <p>#IP BUSINESS</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="btnClose"><img src="img/close-button.png" alt="닫기"></button>
+                        </div>
+
+
+                        <div class="grayBox"></div>
+                    </section>
+
+                    <section class="mission">
+                        <div class="mission_left">
+                            <div class="earths">
+                                <img class="mars" src="img/free-icon-mars-361701.png" alt="화성">
+                                <div class="earths01">
+                                    <img class="world" src="img/free-icon-world-6056812.png" alt="지구">
+                                    <img class="moon" src="img/free-icon-moon-5500467.png" alt="달">
+                                    <div class="earths02">
+                                        <img class="gold" src="img/icon_금성.png" alt="금성">
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="arrow01" src="img/free-icon-down-arrow02.png" alt="화살표">
+                            <img class="sun" src="img/free-icon-sun-6421095.png" alt="태양">
+                        </div>
+                        <div class="mission_right">
+                            <h2 class="mission_title">Mission</h2>
+                            <p class="mission_text">
+                                가치 있는 경험을 발굴하고 발전시켜 전 세계에 소개하는 메이크어스는 <br>
+                                디지털 미디어 사업을 통해 라이프스타일 트렌드를 선도하고 있습니다.
+                                <br>
+                                메이크어스는 국내 영상 및 음악 IP의 글로벌 진출을 위한
+                                게이트 웨이가 <br> 되고자 합니다.
+                                이를 위해 다양한 콘텐츠 IP를 확보 및 연구·개발하고 있으며, <br>
+                                효율적인 제작 방식을 통해 콘텐츠를 양산하고 있습니다.
+                            </p>
+                        </div>
+                    </section>
+                    <section class="history">
+                        <div class="hi_tite">
+                            <h2 class="his">History</h2>
+                            <p class="his_text">
+                                메이크어스는 2014년 1월 설립 이후
+                                트렌드 리더로서
+                                미디어 시장을 선도하고 있습니다.
+                                <br>
+                                향후 글로벌 진출을 통해 K-문화의 선한 경험을
+                                전 세계에 알릴 계획입니다.
+                            </p>
+                        </div>
+                        <div class="his_years">
+                            <ul class="years">
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="#"><span>2014</span></a>
+                                            <a href="#"><span class="calender">2014.01</span> 메이크어스 법인 설립</a>
+                                        </li>
+                                        <li class="tab_it">
+                                            <a href="#"><img src="img/다운로드.png" alt="메이크어스"></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="#"><span>2015</span></a>
+                                            <a href="#"><span class="calender">2015.07</span> 딩고 뮤직 '세로라이브' 런칭</a>
+                                            <a href="#"><span class="calender">2015.10</span> 디지털 미디어 브랜드 'dingo' 런칭</a>
+                                        </li>
+                                        <li class="tab_it">
+                                            <a href=""><img src="img/no_img.gif" alt="이미지없음"></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="#"><span>2017</span></a>
+                                            <a href="#"><span class="calender">2017.05</span> 딩고 뮤직 '이슬라이브' 뉴욕 페스티벌 디지털
+                                                캠페인 부문 본상 수상</a>
+                                        </li>
+                                        <li class="tab_it">
+                                            <a href="#"><img src="img/no_img.gif" alt="이미지없음"></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="#"><span>2018</span></a>
+                                            <a href="#"><span class="calender">2018.03</span> 한국방송광고진흥공사 코바코(kobaco)와 미디어
+                                                상생 업무협약 체결</a>
+                                            <a href="#"><span class="calender">2018.11</span> 2018 대한민국 브랜드 대상 디지털 부문
+                                                최우수상 수상
+                                                딩고 프리스타일 '킬링벌스' 런칭</a>
+                                            <a href="#"><span class="calender">2018.12</span> 2018 대한민국 온라인 광고 대상 미디어 부문
+                                                수상</a>
+                                        </li>
+                                        <li class="tab_it">
+                                            <a href=""><img src="img/no_img.gif" alt="이미지없음"></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="#"><span>2019</span></a>
+                                            <a href="#"><span class="calender">2019.07</span> 딩고 뮤직 '킬링보이스' 런칭</a>
+                                        </li>
+                                        <li class="tab_it">
+                                            <a href="#"><img src="img/딩고뮤직_bg.jpg" alt="딩고뮤직"></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="#"><span>2020</span></a>
+                                            <a href="#"><span class="calender">2020.07</span> 국내 디지털 미디어 최초 유튜브 파트너 세일즈
+                                                권한 획득</a>
+                                            <a href="#">2020.12 제 8회 미래창조 경영 우수기업 대상 디지털 콘텐츠 부문 대상 수상</a>
+                                        </li>
+                                        <li class="tab_it">
+                                            <a href="#"><img src="img/no_img.gif" alt="이미지없음"></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="#"><span>2021</span></a>
+                                            <a href="#"><span class="calender">2021.12</span> 2021년 유튜브 국내 최고 인기 동영상 1위
+                                                기록
+                                                (킬링보이스 - 아이유 편)</a>
+                                        </li>
+                                        <li class="tab_it">
+                                            <a href="#"><img src="img/DM_img (1).jpg" alt="아이유"></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="#"><span>2022</span></a>
+                                            <a href="#"><span class="calender">2022.04</span> 비욘드뮤직 - 메이크어스 MOU 체결</a>
+                                            <a href="#"><span class="calender">2022.05</span> 네이버 NOW - 메이크어스 MOU 체결</a>
+                                            <a href="#"><span class="calender">2022.10</span> 뮤직앤뉴 - 메이크어스 MOU 체결</a>
+                                            <a href="#"><span class="calender">2022.11</span>
+                                                워너뮤직코리아 - 메이크어스 MOU 체결</a>
+                                            <a href="#"><span class="calender">2022.12</span> 2022년 유튜브 국내 최고 인기 동영상 2위
+                                                기록
+                                                (킬링보이스 - 태연 편)</a>
+                                        </li>
+                                        <li class="tab_it">
+                                            <a href="#"><img src="img/no_img.gif" alt="이미지없음"></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="#"><span>2023</span></a>
+                                            <a href="#"><span class="calender">2023.10</span> 뮤직 레이블 'DOT' 설립</a>
+                                            <a href="#"><span class="calender">2023.12</span> 2023년 유튜브 국내 최고 인기 동영상 2위
+                                                기록
+                                                (킬링보이스 - AKMU 편)</a>
+                                        </li>
+                                        <li class="tab_it">
+                                            <a href="#"><img src="img/no_img.gif" alt="이미지없음"></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="#"><span>2024</span></a>
+                                            <a href="#"><span class="calender">2024.05</span> '딩고 뮤직' 유튜브 채널 구독자 500만
+                                                돌파</a>
+                                        </li>
+                                        <li class="tab_it">
+                                            <a href="#"><img src="img/no_img.gif" alt="이미지없음"></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </section>
+                </div>
+
+
+                <div class="view_news">
+                    <section class="dingo_news">
+                        <div class="news_all">
+                            <h2>DINGO NEWS</h2>
+                            <ul>
+                                <li class="come"><a href="" onclick="viewCome(0)">News</a></li>
+                                <li><a href="#" onclick="viewCome(1)">Notice</a></li>
+                                <li><a href="#" onclick="viewCome(2)">Comm</a></li>
+                            </ul>
+                        </div>
+                        <div class="NNC">
+                            <div class="NNC_news come">
+                                <div class="news_crew">
+                                    <div class="news_contents">
+                                        <div class="news">
+                                            <div class="clickme">
+                                                <h2><a class="news_img" href="#"></a></h2>
+                                                <p class="hover_click"><a href="#">Click me</a></p>
+                                            </div>
+                                            <h3 class="yellow_news">
+                                                <a href="#">Dingo News
+                                                </a>
+                                            </h3>
+                                            <span class="news_title"><a href="">
+                                                    디지털 미디어 딩고, 딩고, '딩고 뷰티' → <br> 'at YOU(앳뉴)'로 리브랜딩... <br> 패션, 뷰티,
+                                                    라이프스타일
+                                                    <br> 콘텐츠
+                                                    강화'
+                                                </a></span>
+                                            <p class="years"><a href="">2024/06/06</a></p>
+                                        </div>
+                                        <div class="news">
+                                            <div class="clickme">
+                                                <h2><a class="news_img01" href="#"></a>
+                                                </h2>
+                                                <p class="hover_click"><a href="#">Click me</a></p>
+                                            </div>
+                                            <h3 class="yellow_news"><a href="#">Dingo News
+                                                </a>
+                                            </h3>
+                                            <span class="news_title"><a href="#">
+                                                    디지털 미디어 딩고 대표 음악 채널 <br>
+                                                    '딩고 프리스타일' → 'df'로 <br>
+                                                    리브랜딩... K-대중문화 <br>
+                                                    콘텐츠로 확장
+                                                </a></span>
+                                            <p class="years"><a href="">2024/06/06</a></p>
+                                        </div>
+                                        <div class="news">
+                                            <div class="clickme">
+                                                <h2><a class="news_img02" href="#"></a></h2>
+                                                <p class="hover_click"><a href="#">Click me</a></p>
+                                            </div>
+                                            <h3 class="yellow_news"><a href="#">Dingo News
+                                                </a>
+                                            </h3>
+                                            <span class="news_title"><a href="#">
+                                                    하이퍼코퍼레이션, 4400만 <br>
+                                                    채널 딩고와 함께 글로벌 공략 나선다. <br> <br> <br>
+                                                </a></span>
+                                            <p class="years"><a href="#">2024/06/06</a></p>
+                                        </div>
+                                        <div class="news">
+                                            <div class="clickme">
+                                                <h2><a class="news_img03" href="#"></a></h2>
+                                                <p class="hover_click"><a href="#">Click me</a></p>
+                                            </div>
+                                            <h3 class="yellow_news"><a href="#">Dingo News
+                                                </a>
+                                            </h3>
+                                            <span class="news_title"><a href="#">
+                                                    딩고 뮤직, 유튜브 채널 구독자 500만 <br>
+                                                    돌파...누적 조회수 23억 뷰
+                                                </a></span>
+                                            <p class="years"><a href="">2024/06/06</a></p>
+                                        </div>
+                                        <div class="news">
+                                            <div class="clickme">
+                                                <h2><a class="news_img04" href="#"></a></h2>
+                                                <p class="hover_click"><a href="#">Click me</a></p>
+                                            </div>
+                                            <h3 class="yellow_news">
+                                                <a href="">Dingo News
+                                                </a>
+                                            </h3>
+                                            <span class="news_title"><a href="#">
+                                                    싱어송라이터 지셀, 신곡 '레모네이드' <br>
+                                                    발매...우원재 피처링 지원사격
+                                                </a></span>
+                                            <p class="years"><a href="#">2024/06/06</a></p>
+                                        </div>
+                                        <div class="news">
+                                            <div class="clickme">
+                                                <h2><a class="news_img05" href="#"></a></h2>
+                                                <p class="hover_click"><a href="#">Click me</a></p>
+                                            </div>
+                                            <h3 class="yellow_news"><a href="#">Dingo News
+                                                </a>
+                                            </h3>
+                                            <span class="news_title"><a href="#">
+                                                    '신예' 류민희, 신곡 '가슴아 멈춰' 발매 <br>
+                                                    ... '히트 메이커' 로코베리 안영민 작품
+                                                </a></span>
+                                            <p class="years"><a href="#">2024/06/06</a></p>
+                                        </div>
+                                        <div class="news">
+                                            <div class="clickme">
+                                                <h2><a class="news_img06" href="#"></a></h2>
+                                                <p class="hover_click"><a href="#">Click me</a></p>
+                                            </div>
+                                            <h3 class="yellow_news"><a href="#">Dingo News
+                                                </a>
+                                            </h3>
+                                            <span class="news_title"><a href="#">
+                                                    '걸스플래닛'-'쇼미9' 유다연, 신곡 <br>
+                                                    'text me' 발매...봄 감성 저격
+                                                    <br> <br>
+                                                </a></span>
+                                            <p class="years"><a href="">2024/06/06</a></p>
+                                        </div>
+                                        <div class="news">
+                                            <div class="clickme">
+                                                <h2><a class="news_img07" href="#"></a></h2>
+                                                <p class="hover_click"><a href="#">Click me</a></p>
+                                            </div>
+                                            <h3 class="yellow_news"><a href="#">Dingo News
+                                                </a>
+                                            </h3>
+                                            <span class="news_title"><a href="#">
+                                                    'BTS 작곡가' ADORA(아도라), 신곡 <br>
+                                                    '밤이 되니까' 발매... 키스오브라이프 <br>
+                                                    나띠 피처링
+                                                </a></span>
+                                            <p class="years"><a href="#">2024/06/06</a></p>
+                                        </div>
+                                        <div class="news">
+                                            <div class="clickme">
+                                                <h2><a class="news_img08" href="#"></a></h2>
+                                                <p class="hover_click"><a href="#">Click me</a></p>
+                                            </div>
+                                            <h3 class="yellow_news"><a href="#">Dingo News
+                                                </a>
+                                            </h3>
+                                            <span class="news_title"><a href="#">
+                                                    싱어송라이터 지셀, 신곡 <br>
+                                                    'Like A Movie' 발매...고막 녹이는 <br>
+                                                    독보적 음색
+                                                </a></span>
+                                            <p class="years"><a href="#">2024/06/06</a></p>
+                                        </div>
+                                        <div class="news">
+                                            <div class="clickme">
+                                                <h2><a class="news_img09" href="#"></a></h2>
+                                                <p class="hover_click"><a href="#">Click me</a></p>
+                                            </div>
+                                            <h3 class="yellow_news"><a href="#">Dingo News
+                                                </a>
+                                            </h3>
+                                            <span class="news_title"><a href="#">
+                                                    싱어송라이터 PL(피엘), 딩고와 <br> 손잡았다...신곡 'POOM' 발매
+                                                </a></span>
+                                            <p class="years"><a href="#">2024/06/06</a></p>
+                                        </div>
+                                        <div class="news">
+                                            <div class="clickme">
+                                                <h2><a class="news_img10" href="#">
+                                                    </a></h2>
+                                                <p class="hover_click"><a href="#">Click me</a></p>
+                                            </div>
+                                            <h3 class="yellow_news"><a href="#">Dingo News
+                                                </a>
+                                            </h3>
+                                            <span class="news_title"><a href="#">
+                                                    딩고, 오리지널 콘텐츠 '세아노' <br> 시즌2 론칭...첫 주자 비비 편 공개
+                                                </a></span>
+                                            <p class="years"><a href="#">2024/06/06</a></p>
+                                        </div>
+                                        <div class="news">
+                                            <div class="clickme">
+                                                <h2><a class="news_img11" href="#"></a></h2>
+                                                <p class="hover_click"><a href="#">Click me</a></p>
+                                            </div>
+                                            <h3 class="yellow_news"><a href="#">Dingo News
+                                                </a>
+                                            </h3>
+                                            <span class="news_title"><a href="#">
+                                                    '신예' 류민희, 신곡 '그대에게 쓰는 <br> 마음' 발매... '히트 메이커' 로코베리 안영민 작품
+                                                </a></span>
+                                            <p class="years"><a href="#">2024/06/06</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="aside">
+                                        <p class="crew_aside">
+                                            <a href="#"><!-- crew이미지 --></a>
+                                        </p>
+                                        <p class="crew_arrow">
+                                            <a href="#">Dingo crew 이동 <br>
+                                                <img src="img/free-icon-download-arrow-right.png" alt="#">
+                                            </a>
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                                <!-- news_crew -->
+                                <nav class="pg_wrap">
+                                    <span class="pg">
+                                        <span class="sound_only">
+                                            <img src="img/icon_arrow.png" alt="열리는 아이콘"><!-- 열린 아이콘 --></span>
+                                        <a href="#" class="pg_page pga">1</a>
+                                        <a href="#" class="pg_page">2</a>
+                                        <a href="#" class="pg_page">3</a>
+                                        <a href="#" class="pg_page">4</a>
+                                        <a href="#" class="pg_page">5</a>
+                                        <a href="#" class="pg_page">6</a>
+                                        <a href="#" class="pg_page">7</a>
+                                        <a href="#" class="pg_page">8</a>
+                                        <a href="#" class="pg_page pg_end"><img src="img/icon_arrow.png" alt="닫히는 아이콘"><!-- 맨끝아이콘 --></a>
+                                    </span>
+                                </nav>
+                            </div>
+                            <!-- NNC_news -->
+                            <div class="notice">
+                                <img src="img/nopage.gif" alt="페이지 없음">
+                            </div>
+                            <div class="Comm">
+                                <img src="img/nopage.gif" alt="페이지 없음">
+                            </div>
+                        </div>
+                        <!-- NNC -->
+
+
+                    </section>
+                   
+                </div>
+                <!-- view_news -->
+
+                <div class="view_meeting">
+                    <div class="view_meetings">
+                        <section class="dingo_meeting">
+                            <div class="meeting_all">
+                                <h2>Meeting</h2>
+                                <!-- <p>MAKE US 찾아 오시는 길</p> -->
+                            </div>
+                            <div class="meeting_addres">
+                                <div class="meeting_left">
+                                    <img src="img/메이크어스사진01.png" alt="메이크어스사진01" class="makeus_view">
+                                    <div class="company_img">
+                                        <img src="img/메이크어스사진06.png" alt="메이크어스사진06" class="click_makeus">
+                                        <img src="img/메이크어스사진05.png" alt="메이크어스사진05" class="click_makeus">
+                                        <img src="img/메이크어스사진07.png" alt="" class="click_makeus">
+                                        <img src="img/메이크어스사진.png" alt="메이크어스사진" class="click_makeus">
+                                    </div>
+                                </div>
+                                <div class="meeting_right">
+                                    <h3>MAKE US CONTACT</h3>
+                                    <ul class="addres">
+                                        <li>
+                                            <p>주소 : 서울특별시 강남구 봉은사로 18길 38</p>
+                                            <a class="copy" href="#">Copy</a>
+                                        </li>   
+                                        <li>
+                                            <p>지번주소 : 서울특별시 강남구 역삼동 614-5</p>
+                                            <a class="copy" href="#">Copy</a>
+                                        </li>   
+                                        <li>
+                                            <p>E-MAIL : Contact@makeus.com</p>
+                                            <a class="copy" href="#">Copy</a>
+                                        </li>   
+                                    </ul>
+                                    <div class="service">
+                                        <p class="call"><a href="#">문의하기</a></p>
+                                        <p><a href="#">전화하기</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.16296531806!2d127.02671297587088!3d37.50407437205484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3e32b2b8265%3A0xddd0599488c54ea7!2zKOyjvCnrqZTsnbTtgazslrTsiqQoTWFrZXVzKQ!5e0!3m2!1sko!2skr!4v1727686542190!5m2!1sko!2skr" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <div class="way">
+                                    <img src="img/free-icon-traffic-signal-1208122.png" alt="">
+                                     <p><a href="https://www.google.com/maps/place/(%EC%A3%BC)%EB%A9%94%EC%9D%B4%ED%81%AC%EC%96%B4%EC%8A%A4(Makeus)/data=!4m6!3m5!1s0x357ca3e32b2b8265:0xddd0599488c54ea7!8m2!3d37.5040744!4d127.0292879!16s%2Fg%2F11scqkd_v3?hl=ko&entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D">길 찾기</a></p>
+                                </div>
+                            </div>
+                        </section>
+                       
+                    </div>
+                </div>
+            </div>
+            <!-- smallGnb -->
+        </div>
+        <!-- inner -->
+
+
+        <footer>
+            <div class="bottom_footer">
+                <p class="footer_logo">
+                    <a class="logo_dingo" href="#"><!-- logo이미지 --> </a>
+                    <a class="logo_text" href="">by</a>
+                    <a class="logo_make_us" href="#"><!-- make_us --></a>
+                </p>
+                <ul class="company_list">
+                    <li>회사규정</li>
+                    <li>이벤트</li>
+                    <li>딩고 크루</li>
+                    <li>고객센터</li>
+                </ul>
+                <p class="addres">서울 강남구 봉은사로 18길 36ㅣcontact@makeus.com</p>
+                <p class="copyright">Copyright © 2022 Makeus. All rights reserved.</p>
+            </div>
+        </footer>
+
+    </div>
+    <!-- #wrap -->
+    <script src="js/dingo_company.js"></script>
+    <script src="js/m_dingo_company.js"></script>
+
+</body>
+
+</html>

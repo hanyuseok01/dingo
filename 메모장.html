@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        a {text-decoration:none;color:#333;}
+        ul {list-style:none;}
+        ul.zoom_btn li {display:inline-block;border:1px solid #ccc;text-align:center;}
+        ul.zoom_btn li a {display:block;width:40px;height:40px;line-height:40px;}
+     
+    </style>
+     
+    <header>
+        <ul class="zoom_btn">
+            <li><a href="javascript:;" id="zoomOut">-</a></li>
+            <li><a href="javascript:;" id="zoomInit">기본</a></li>
+            <li><a href="javascript:;" id="zoomIn">+</a></li>
+        </ul>
+    </header>
+    <!--//header-->
+     
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis delectus, libero porro. Voluptate autem mollitia delectus. Voluptate consectetur, provident nam, facilis ea mollitia rerum animi pariatur illo suscipit, eos autem!</p>
+     
+    <script type="text/javascript"> 
+     
+    var zoomsVal = 100;
+    var zoomsInterval = 10;
+    var zoomsInit = document.getElementById("zoomInit");
+    var zoomsIn = document.getElementById("zoomIn");
+    var zoomsOut = document.getElementById("zoomOut");
+        
+    zoomsInit.addEventListener("click", zoomInit);
+    zoomsIn.addEventListener("click", zoomIn);
+    zoomsOut.addEventListener("click", zoomOut);
+     
+        function zoomInit(){ 
+     
+            zoomsVal = 100;
+            zoomCalc();
+            //console.log("zoom init");
+     
+        }
+     
+        function zoomCalc(){
+     
+            document.body.style.zoom = zoomsVal + '%';
+     
+        }
+     
+        function zoomIn() { 
+     
+            zoomsVal += zoomsInterval;
+            zoomCalc();
+            //console.log("zoom In");
+     
+        }
+     
+        function zoomOut() { 
+     
+            zoomsVal -= zoomsInterval;
+            zoomCalc();
+            //console.log("zoom out");
+     
+        }    
+     
+    </script> 
+    
+</body>
+</html>
