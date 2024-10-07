@@ -14,10 +14,15 @@ const sub_gnb = $('.all_sub_gnb')
 /* console.log(sub_gnb) */
 
 gnb.on('mouseover focusin', function() {
-        sub_gnb.slideDown(500)
+        sub_gnb.slideDown(500).animate({
+            opacity:1,
+        },1000)
     })
     sub_gnb.on('mouseleave focusout', function() {
-        sub_gnb.slideUp(1000)
+        sub_gnb.animate({
+            opacity: 0.5,
+            height: '100px'
+        },500).slideUp(1000);
     })
 
 
@@ -82,6 +87,7 @@ let grayBox = document.querySelector('.grayBox');
         }
     })
 
+    
    /* crew_aside */
 
    const dingoNews = document.querySelector(".dingo_news");
@@ -116,18 +122,6 @@ let grayBox = document.querySelector('.grayBox');
 
 
 
-    /*  $('.sub_gnb').hover(
-        function() {       
-            $('.language_list').stop().slideDown();
-            $
-        },
-        function() {      
-            $('.language_list').stop().slideUp();
-        }
-    );  */
-
-
-  
 
   
 

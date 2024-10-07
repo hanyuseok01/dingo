@@ -16,10 +16,15 @@ const sub_gnb = $('.all_sub_gnb')
 /* console.log(sub_gnb) */
 
 header.on('mouseover focusin', function() {
-        sub_gnb.slideDown(500)
+        sub_gnb.slideDown(500).animate({
+            opacity:1,
+        },1000)
     })
     sub_gnb.on('mouseleave focusout', function() {
-        sub_gnb.slideUp(1000)
+        sub_gnb.animate({
+            opacity: 0.5,
+            height: '100px'
+        },500).slideUp(1000);
     })
 
 
@@ -107,8 +112,8 @@ function viewTab(index) {
 }
 
 invenTabs.forEach((invenTab, index) => {
-    invenTab.addEventListener('click', (event) => {
-        event.preventDefault(); // 링크 클릭 시 페이지 이동 방지
+    invenTab.addEventListener('click', (e) => {
+        e.preventDefault();
         viewTab(index);
     });
 });
@@ -174,7 +179,27 @@ invenTabs.forEach((invenTab, index) => {
     iterations: Infinity,
     direction: 'alternate'
 })
+/* his_years */
+// .left_years > li에서 li.on 클래스가 붙은 녀석을 클릭하면 years > li 에 li.on클래스 붙은 요소 나타난다.
 
+    const leftYears = document.querySelectorAll('.left_years > li')
+    const years = document.querySelectorAll('.years > li')
+    //console.log(years)
+    leftYears.forEach((leftYear, index) => {
+        //console.log(leftYear, index)
+        leftYear.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            // 모든 leftYears와 years의 on 클래스 제거
+            leftYears.forEach(year => year.classList.remove('on'));
+            years.forEach(year => year.classList.remove('on'));
+
+            // 클릭한 leftYear와 해당 index의 years에 on 클래스 추가
+            leftYear.classList.add('on');
+            years[index].classList.add('on');
+             
+        })
+    });
 
 
   /* .view_news .crew_aside */

@@ -661,42 +661,68 @@
 
 /* footer */
 footer {
-
-    height: 300px;
-
+    width: 100%;
+    min-height: 180px;
+    background: #000;
 }
-
+.bottom_footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
 .bottom_footer>.footer_logo {
-    margin-bottom: 20px;
-    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    padding-top: 5px;
     box-sizing: border-box;
 
 }
 
 .bottom_footer>.footer_logo>.logo_dingo {
-    width: 120px;
-    height: 90px;
+    display: block;
+    background: url(../img/로고제작02.png)no-repeat center / contain;
+    width: 100px;
+    height: 50px;
     margin-right: 30px;
 }
 
 .bottom_footer>p>.logo_text {
-    font-size: 16px;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+
 }
 
 .bottom_footer>p>.logo_make_us {
-    width: 120px;
-    height: 90px;
+    display: block;
+    background: url(../img/다운로드.png)no-repeat center / cover;
+    width: 100px;
+    height: 50px;
+    margin-left: 30px;
 }
 
 .bottom_footer .company_list {
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    margin: 10px 0 15px 0;
+
 }
 
 .bottom_footer .company_list li {
     width: 130px;
-    font-size: 16px;
+    height: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    text-align: center;
+    border-left: 3px solid #fff;
 }
 
 .bottom_footer .company_list li:first-child {
@@ -704,13 +730,20 @@ footer {
 }
 
 .bottom_footer .addres {
-    font-size: 16px;
-    margin-bottom: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .bottom_footer .copyright {
-    font-size: 16px;
- 
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    text-align: center;
 }
 
 /* **********************mobile************************* */
@@ -1380,59 +1413,93 @@ footer {
     }
     
     
-    /* footer */
-    footer {
-    
-        height: 200px;
-    
-    }
-    
-    .bottom_footer>.footer_logo {
-        margin-bottom: 10px;
-        padding-top: 10px;
-        box-sizing: border-box;
-    
-    }
-    
-    .bottom_footer>.footer_logo>.logo_dingo {
-        width: 80px;
-        height: 60px;
-        margin-right: 30px;
-    }
-    
-    .bottom_footer>p>.logo_text {
-        font-size: 13px;
-    }
-    
-    .bottom_footer>p>.logo_make_us {
-        width: 80px;
-        height: 60px;
-    }
-    
-    .bottom_footer .company_list {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 10px;
-    }
-    
-    .bottom_footer .company_list li {
-        width: 100px;
-        font-size: 13px;
-    }
-    
-    .bottom_footer .company_list li:first-child {
-        border: none;
-    }
-    
-    .bottom_footer .addres {
-        font-size: 13px;
-        margin-bottom: 10px;
-    }
-    
-    .bottom_footer .copyright {
-        font-size: 16px;
-     
-    }
+  /* footer */
+footer {
+    width: 100%;
+    min-height: 180px;
+    background: #000;
+}
+.bottom_footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.bottom_footer>.footer_logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    box-sizing: border-box;
+
+}
+
+.bottom_footer>.footer_logo>.logo_dingo {
+    display: block;
+    background: url(../img/로고제작02.png)no-repeat center / contain;
+    width: 80px;
+    height: 50px;
+    margin-right: 30px;
+}
+
+.bottom_footer>p>.logo_text {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+
+}
+
+.bottom_footer>p>.logo_make_us {
+    display: block;
+    background: url(../img/다운로드.png)no-repeat center / cover;
+    width: 80px;
+    height: 50px;
+    margin-left: 30px;
+}
+
+.bottom_footer .company_list {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 15px 0;
+
+}
+
+.bottom_footer .company_list li {
+    width: 100px;
+    height: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    text-align: center;
+    border-left: 1px solid #fff;
+}
+
+.bottom_footer .company_list li:first-child {
+    border: none;
+}
+
+.bottom_footer .addres {
+    font-size: 13px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.bottom_footer .copyright {
+    font-size: 13px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
     
     
 
