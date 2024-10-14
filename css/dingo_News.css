@@ -258,7 +258,10 @@ header .tablet_sub {
     color: #000;
     margin-right: 50px;
 }
-
+/* view_Company */
+.view_Company {
+    display: none;
+}
 /* contents_all */
 .contents_all {
     margin-bottom: 200px;
@@ -1183,7 +1186,7 @@ header .tablet_sub {
 
 /* #view_news  */
 .view_news {
-    display: none;
+    display: block;
     margin-bottom: 100px;
 }
 

@@ -258,7 +258,10 @@ header .tablet_sub {
     color: #000;
     margin-right: 50px;
 }
-
+/* view_Company */
+.view_Company {
+    display: none;
+}
 /* contents_all */
 .contents_all {
     margin-bottom: 200px;
@@ -1497,7 +1500,7 @@ header .tablet_sub {
 
 /* #view_meeting */
 .view_meeting {
-    display: none;
+    display: block;
 }
 
 .view_meeting .meeting_all {
