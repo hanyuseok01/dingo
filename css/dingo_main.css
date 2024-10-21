@@ -714,8 +714,15 @@
 }
 
 .most_view .most_subview>p>a {
+    position: relative;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
+}
+.most_view .most_subview>p>a::before {
+    content: "+";
+    position: absolute;
+    top: 0; 
+    right: 50px;
 }
 
 .most_view .most_subview>div h2 {
@@ -897,9 +904,16 @@
 }
 
 .music_contents .music_all>p a {
+    position: relative;
     font-size: 16px;
-    font-weight: 500;
-    color: #ccc;
+    font-weight: 400;
+}
+.music_contents .music_all>p a::before {
+    content: '+';
+    position: absolute;
+    top: 0;
+    right: 50px;
+   
 }
 
 .music_contents>.swiper {
@@ -1254,10 +1268,21 @@
 }
 
 .news_all>p>a {
+    position: relative;
     font-size: 16px;
-    font-weight: 500;
-    font-family: "Poppins", sans-serif;
-    color: #ccc;
+    font-weight: 400;
+    
+   
+}
+.news_all>p>a::before {
+    content: '+';
+    position: absolute;
+    top: 0;
+    right: 50px;
+    font-size: 16px;
+    font-weight: 400;
+   
+   
 }
 
 .news_crew .news_contents .news {
@@ -1299,7 +1324,7 @@
     position: relative;
 }
 
-.aside .crew_aside>a {
+.aside .crew_aside>a:first-child {
     display: block;
     width: 450px;
     height: 612px;
@@ -1314,16 +1339,16 @@
 
 }
 
-.aside>.crew_arrow {
+.aside> .crew_aside .crew_arrow {
     position: absolute;
-    top: 11%;
+    top: 40%;
     left: 33%;
     text-align: center;
     opacity: 0;
     transition: all 0.3s;
 }
 
-.aside>.crew_arrow:hover {
+.aside> .crew_aside .crew_arrow:hover {
     opacity: 1;
 }
 
@@ -1372,7 +1397,7 @@ footer {
 .bottom_footer>p>.logo_text {
     display: block;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 300;
     font-family: "Poppins", sans-serif;
     color: #fff;
 
@@ -1393,32 +1418,39 @@ footer {
 
 }
 
-.bottom_footer .company_list li {
+.bottom_footer .company_list li > a {
+    position: relative;
+    display: block;
     width: 130px;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 300;
     font-family: "Poppins", sans-serif;
     color: #fff;
     text-align: center;
-    border-left: 3px solid #fff;
 }
-
+.bottom_footer .company_list li + li > a:before {
+    content: '';
+    position: absolute;
+    left: 0; top: 50%;
+    transform: translateY(-50%);
+    width: 1px; height: 16px;
+    background: rgba(255,255,255,0.6);
+}
 .bottom_footer .company_list li:first-child {
     border: none;
 }
 
 .bottom_footer .addres {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 300;
     font-family: "Poppins", sans-serif;
     color: #fff;
     text-align: center;
-    margin-bottom: 50px;
 }
 
 .bottom_footer .copyright {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 300;
     font-family: "Poppins", sans-serif;
     color: #fff;
     text-align: center;

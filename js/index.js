@@ -14,15 +14,10 @@ const sub_gnb = $('.all_sub_gnb')
 /* console.log(sub_gnb) */
 
 gnb.on('mouseover focusin', function() {
-        sub_gnb.slideDown(500).animate({
-            opacity:1,
-        },1000)
+        sub_gnb.slideDown(500)
     })
     sub_gnb.on('mouseleave focusout', function() {
-        sub_gnb.animate({
-            opacity: 0.5,
-            height: '100px'
-        },500).slideUp(1000);
+        sub_gnb.slideUp(100);
     })
 
 
@@ -39,7 +34,6 @@ gnb.on('mouseover focusin', function() {
     event.preventDefault();
     alert('검색 아이콘 클릭됨!');
 });
-
 
 /* more_view */
 const iconScroll = document.querySelector('.icon_scroll');

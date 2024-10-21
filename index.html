@@ -19,8 +19,6 @@
 
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
-
-
 </head>
 
 <body>
@@ -90,7 +88,7 @@
             <a href="" class="option"><img src="img/option_white.png" alt="설정"></a>
         </div>
 
-        <div class="all_sub_gnb">
+        <div class="all_sub_gnb" >
             <div class="sub_gnb">
                 <div class="sub_gnb_logo">
                     <h1><a href="index.html"><!-- 로고이미지 --></a></h1>
@@ -553,12 +551,13 @@
                     <div class="aside">
                         <p class="crew_aside">
                             <a href="#"><!-- crew이미지 --></a>
-                        </p>
-                        <p class="crew_arrow">
-                            <a href="#">Dingo crew 이동 <br>
+                            <a class="crew_arrow" href="#">Dingo crew 이동 <br>
                                 <img src="img/free-icon-download-arrow-right.png" alt="#">
                             </a>
                         </p>
+                      
+                           
+                      
                     </div>
                 </div>
             </section>
@@ -566,104 +565,30 @@
         <footer>
             <div class="bottom_footer">
                 <p class="footer_logo">
-                    <a class="logo_dingo" href="index.html"><!-- logo이미지ㄴ --> </a>
+                    <a class="logo_dingo" href="index.html"><!-- logo이미지 --> </a>
                     <a class="logo_text" href="">by</a>
                     <a class="logo_make_us" href="https://makeusofficial.tistory.com/"><!-- make_us --></a>
                 </p>
                 <ul class="company_list">
-                    <li>회사규정</li>
-                    <li>이벤트</li>
-                    <li>딩고 크루</li>
-                    <li>고객센터</li>
+                    <li><a href="javascript:;">회사규정</a></li>
+                    <li><a href="javascript:;">이벤트</a></li>
+                    <li><a href="javascript:;">딩고 크루</a></li>
+                    <li><a href="javascript:;">고객센터</a></li>
                 </ul>
                 <div>
-                    <p class="addres">서울 강남구 봉은사로 18길 36ㅣcontact@makeus.com</p>
-                    <p class="copyright">Copyright © 2022 Makeus. All rights reserved.</p>
+                    <p class="addres">서울 강남구 봉은사로 18길 36ㅣ<a href="mailto:contact@makeus.com" class="go_email">contact@makeus.com</a></p>
+                    <p class="copyright">Copyright &copy; 2022 Makeus. All rights reserved.</p>
                 </div>
             </div>
         </footer>
     </div>
+
+     
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script src="js/index.js"></script>
+    <script src="js/swiper.js"></script>
     <script src="js/t_index.js" media="screen and (max-width:768px)"></script>
-
-    <!-- collabo_swiper -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".collabo_swiper", {
-            slidesPerView: 1,
-            spaceBetween: 1,
-            freeMode: true,
-            loop: true,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            }
-        });
-    </script>
-    <!-- most_view -->
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".most_view_swiper", {
-            slidesPerView: 4,
-            spaceBetween: 0,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-            breakpoints: {
-                1440: {
-                    slidesPerView: 4, // 태블릿
-                },
-                768: {
-                    slidesPerView: 2, // 태블릿
-                },
-                430: {
-                    slidesPerView: 1, // 모바일
-                },
-            }
-
-        });
-    </script>
-    <!-- music_contents -->
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <script>
-        var swiper = new Swiper(".musicSwiper", {
-            /*  slidesPerView: 4, */
-            slidesPerView: 'auto',
-            spaceBetween: -300,
-            autoplay: {
-                delay: 2000,
-                disableOnInteraction: false,
-
-            },
-            speed: 1000,
-            Infinity: true,
-            direction: 'horizontal',
-            
-        });
-
-        var swiper = new Swiper(".music-Swiper", {
-            slidesPerView: 4,
-            width: 1720,
-            spaceBetween: -300,
-            autoplay: {
-                delay: 2200,
-                disableOnInteraction: false,
-
-            },
-            speed: 1200,
-            Infinity: true,
-            direction: 'horizontal'
-        });
-
-    </script>
 
 </body>
 
